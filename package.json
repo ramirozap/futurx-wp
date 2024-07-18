@@ -1,0 +1,13 @@
+{
+  "name": "futurx-wp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "clean": "wp-env clean all"
+  },
+  "author": "",
+  "license": "ISC"
+}
