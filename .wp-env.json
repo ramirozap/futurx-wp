@@ -1,6 +1,5 @@
 {
   "mappings": {
-    "wp-content/themes/futurx": "./themes/futurx",
-    "wp-content/plugins/": "./plugins/"
+    "wp-content/themes/futurx": "./themes/futurx"
   }
 }
