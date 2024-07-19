@@ -685,7 +685,7 @@ img .float-center {
 
 body {
   color: #444;
-  background-color: #000;
+  background-color: #fff;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: none;
@@ -693,8 +693,8 @@ body {
           text-size-adjust: none;
   font-size: 16px;
   font-size: 1rem;
-  min-width: 100vw;
-  min-height: 100vh;
+  max-width: 100vw;
+  min-height: 110vh;
 }
 body.menu-open {
   overflow: hidden;
@@ -967,8 +967,22 @@ small {
 }
 
 .header {
-  padding: 24px 0;
-  margin-bottom: 48px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px 24px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.header .title {
+  color: var(--Violet, #b49bca);
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 @media screen and (max-width: 1000px) {
   .header .header__navigation {
@@ -1130,4 +1144,47 @@ small {
 .alert.alert--danger {
   color: #d9534f;
   border-color: #d9534f;
+}
+
+.wp-block-cb-carousel.slick-dotted.slick-slider {
+  max-width: 100%;
+  height: calc(100vh - 40px);
+  overflow: hidden;
+  margin: 0;
+}
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-track,
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-list {
+  height: 100%;
+}
+.wp-block-cb-carousel.slick-dotted.slick-slider figure {
+  height: 100%;
+}
+.wp-block-cb-carousel.slick-dotted.slick-slider img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-dots {
+  bottom: 8px;
+}
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-dots li {
+  gap: 11px;
+}
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-dots li button,
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-dots li button:not(:active) {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+}
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-dots li button:before,
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-dots li button:not(:active):before {
+  content: "";
+}
+.wp-block-cb-carousel.slick-dotted.slick-slider .slick-dots li.slick-active button {
+  background-color: #b49bca;
+}
+
+.wp-block-cb-carousel .slick-slide {
+  overflow: hidden;
+  padding: 0;
 }

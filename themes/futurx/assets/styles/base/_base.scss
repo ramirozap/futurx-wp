@@ -1,12 +1,12 @@
 body {
   color: map-get($colors, "base");
-  background-color: map-get($colors, "background");
+  background-color: #fff;
   font-family: $base-font-family;
   line-height: $base-line-height;
   text-size-adjust: none;
   @include font-size($base-font-size);
-  min-width: 100vw;
-  min-height: 100vh;
+  max-width: 100vw;
+  min-height: 110vh;
   &.menu-open {
     overflow: hidden;
   }
