@@ -1,0 +1,55 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-futurx-companias {
+  background: var(--background-dark-grey, #222);
+}
+.wp-block-futurx-companias .container {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 290px 1fr 290px;
+  gap: 60px;
+  max-width: 1440px;
+  margin: auto;
+}
+.wp-block-futurx-companias .compania {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-futurx-companias .compania .nombre {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 24px;
+  box-shadow: -3px 4px 10.4px 0px rgba(255, 255, 255, 0.2);
+  background: var(--color-white, #fff);
+  color: #222;
+  font-family: var(--font-family-primary, Helvetica);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wp-block-futurx-companias .compania .texto {
+  color: #d9d9d9;
+  padding-top: 50px;
+  /* Web/Primar */
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wp-block-futurx-companias .flechas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

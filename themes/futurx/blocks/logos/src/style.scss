@@ -1,0 +1,24 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-futurx-logos {
+	background-color: #222;
+	.container {
+		color: #c6c6c6;
+		padding: 60px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	.logos {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+}

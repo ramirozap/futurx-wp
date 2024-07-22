@@ -19,19 +19,28 @@
     </head>
     <body <?php body_class(); ?>>
         <header class="header" role="banner">
-            <div class="title">
-                IA + MÚSICA
-            </div>
-            <div class="col col--lg-8 col--lg-offset-1 col--md-8 col--md-offset-1 col--sm-6 col--xs-6">
-                <div class="header__navigation">
-                    <nav role="navigation">
-                        <?php wp_nav_menu(['theme_location' => 'header', 'menu_class' => 'nav nav--header']); ?>
-                    </nav>
+            <div class="container">
+                <div class="title">
+                    IA + MÚSICA
                 </div>
-                <a href="#" class="nav-burger js-menu-toggle">
-                    <span class="nav-burger__line"></span>
-                    <span class="nav-burger__line"></span>
-                    <span class="nav-burger__line"></span>
-                </a>                        
+                <div class="col col--lg-8 col--lg-offset-1 col--md-8 col--md-offset-1 col--sm-6 col--xs-6">
+                    <div class="header__navigation">
+                        <nav role="navigation">
+                            <!--
+                            <?php wp_nav_menu(['theme_location' => 'header', 'menu_class' => 'nav nav--header']); ?>
+    -->
+                            <ul class="nav nav--header">
+                                <li class="nav__item">
+                                    <a href="#compra" class="nav__link">COMPRA</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="#" class="nav-burger js-menu-toggle">
+                        <span class="nav-burger__line"></span>
+                        <span class="nav-burger__line"></span>
+                        <span class="nav-burger__line"></span>
+                    </a>                        
+                </div>
             </div>
         </header>

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "futurx/tiendas",
+  "version": "0.1.0",
+  "title": "Grupo de links",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "tiendas",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "texto": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "alternativeStyle": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

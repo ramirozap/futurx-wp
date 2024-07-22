@@ -1,4 +1,4 @@
-        <footer class="footer" role="contentinfo">
+<!--         <footer class="footer" role="contentinfo">
             <div class="container">
                 <div class="row">
                     <div class="col col--lg-3 col--md-3 col--sm-12 col--xs-12">
@@ -12,6 +12,9 @@
                 </div>
             </div>
         </footer>
+        -->
+</div>
+<!-- end container -->
         <?php wp_footer(); ?>
     </body>
 </html>

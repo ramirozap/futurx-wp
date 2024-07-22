@@ -1,0 +1,60 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-futurx-reporte {
+	background: #222;
+	.container {
+		display: grid;
+		padding: 60px 120px;
+		gap: 120px;
+		grid-template-columns: 380px 1fr;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	.izquierda {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.texto {
+		border: 1px solid #847f7f;
+		padding: 25px;
+		color: #fff;
+
+		/* Web/Primar */
+		font-family: Helvetica;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	a {
+		margin-top: 30px;
+		background-color: #fff;
+		display: flex;
+		width: 233px;
+		height: 44px;
+		padding: 10px 24px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		color: #000;
+
+		text-align: center;
+		/* Button/web */
+		font-family: Helvetica;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	img {
+		width: 379px;
+	}
+}

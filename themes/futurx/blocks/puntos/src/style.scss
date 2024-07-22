@@ -1,0 +1,66 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-futurx-puntos {
+	background: linear-gradient(180deg, #b49bca 0%, #222 100%);
+	color: #fff;
+	.container {
+		max-width: 1440px;
+		padding: 60px;
+		display: flex;
+		gap: 60px;
+		flex-direction: column;
+		margin: auto;
+		.capitulo {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 60px;
+			.izquierda {
+				position: relative;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				.titulo {
+					padding: 10px 24px;
+					height: fit-content;
+					width: 210px;
+					background-color: #000;
+					color: #fff;
+					font-family: Helvetica;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+					margin-top: 21px;
+					z-index: 1;
+					&.ultimo {
+						margin-top: 10px;
+					}
+				}
+				.flecha {
+					position: absolute;
+					top: 15px;
+					width: 95%;
+					right: 0;
+				}
+			}
+			.derecha {
+				padding-top: 12px;
+				color: #000;
+
+				/* Web/Primar */
+				font-family: Helvetica;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				.separador {
+					color: rgba(236, 236, 236, 0.52);
+				}
+			}
+		}
+	}
+}

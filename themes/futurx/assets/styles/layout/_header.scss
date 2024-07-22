@@ -1,14 +1,20 @@
 @use "sass:math";
 
 .header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: math.div($base-spacing-unit, 3) $base-spacing-unit;
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   z-index: 100;
+  background-color: rgba(0, 0, 0, 0.7);
+  .container {
+    width: 100%;
+    max-width: 1440px;
+    padding: math.div($base-spacing-unit, 3) $base-spacing-unit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    margin: auto;
+  }
   .title {
     color: var(--Violet, #b49bca);
     font-family: Helvetica;

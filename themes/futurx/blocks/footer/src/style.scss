@@ -1,0 +1,35 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-futurx-footer {
+	background-color: #000;
+	.container {
+		color: #c6c6c6;
+		padding: 60px;
+		display: flex;
+		justify-content: space-evenly;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+	.book-card {
+		display: flex;
+		flex-direction: column;
+	}
+	a {
+		font-family: Helvetica;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 16px;
+		&.main-link {
+			font-weight: 700;
+			text-transform: uppercase;
+			margin-bottom: 36px;
+		}
+	}
+}

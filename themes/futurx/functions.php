@@ -324,3 +324,18 @@ function front_page_on_pages_menu() {
 }
 
 add_action( 'admin_menu' , 'front_page_on_pages_menu' );
+
+function register_blocks() {
+    register_block_type( __DIR__ . '/blocks/primer-capitulo/build' );
+    register_block_type( __DIR__ . '/blocks/compra/build' );
+    register_block_type( __DIR__ . '/blocks/publicacion/build' );
+    register_block_type( __DIR__ . '/blocks/tiendas/build' );
+    register_block_type( __DIR__ . '/blocks/boton-compra/build' );
+    register_block_type( __DIR__ . '/blocks/reporte/build' );
+    register_block_type( __DIR__ . '/blocks/companias/build' );
+    register_block_type( __DIR__ . '/blocks/footer/build' );
+    register_block_type( __DIR__ . '/blocks/logos/build' );
+    register_block_type( __DIR__ . '/blocks/puntos/build' );
+}
+
+add_action( 'init', 'register_blocks' );
