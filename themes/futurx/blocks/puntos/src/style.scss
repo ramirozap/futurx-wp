@@ -64,3 +64,48 @@
 		}
 	}
 }
+
+@media (max-width: 1200px) {
+	.wp-block-futurx-puntos {
+		.container {
+			.capitulo {
+				.izquierda {
+					.flecha {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.wp-block-futurx-puntos {
+		.container {
+			padding: 40px;
+			.capitulo {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				.izquierda {
+					display: flex;
+					.capitulo-numero {
+						width: 120px;
+					}
+					.titulo {
+						align-self: center;
+						margin-top: unset;
+					}
+					.flecha {
+						display: none;
+					}
+				}
+				.derecha {
+					margin-left: 120px;
+					padding-top: 12px;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

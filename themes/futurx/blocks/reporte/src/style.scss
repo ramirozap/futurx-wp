@@ -58,3 +58,12 @@
 		width: 379px;
 	}
 }
+
+@media (max-width: 1060px) {
+	.wp-block-futurx-reporte {
+		.container {
+			grid-template-columns: 1fr;
+			padding: 60px 30px;
+		}
+	}
+}

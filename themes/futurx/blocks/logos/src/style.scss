@@ -22,3 +22,15 @@
 		align-items: center;
 	}
 }
+
+@media (max-width: 768px) {
+	.wp-block-futurx-logos {
+		.container {
+			padding: 30px;
+		}
+		.logos {
+			flex-direction: column;
+			gap: 30px;
+		}
+	}
+}

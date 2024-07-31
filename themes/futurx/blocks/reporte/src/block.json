@@ -19,6 +19,12 @@
 	"attributes": {
 		"texto": {
 			"type": "string"
+		},
+		"textoLink": {
+			"type": "string"
+		},
+		"link": {
+			"type": "string"
 		}
 	}
 }

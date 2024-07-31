@@ -26,6 +26,7 @@
 		align-items: center;
 		justify-content: center;
 		padding: 63px 25px 25px;
+		flex-direction: column;
 		&.alternative {
 			border-color: var(--Gris, #c6c6c6);
 			.title {
@@ -56,13 +57,36 @@
 			width: 100%;
 			padding: 10px 8px;
 			font-family: Helvetica;
-			font-size: 17px;
+			font-size: 18px;
 			font-style: normal;
 			font-weight: 400;
 			line-height: normal;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			&:not(:first-child) {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.wp-block-futurx-compra {
+		.container {
+			flex-direction: column;
+			padding: 0 20px 20px;
+			justify-content: center;
+			align-items: center;
+		}
+		.book-card {
+			width: 290px;
+			padding: 25px 15px;
+			margin-bottom: 40px;
+			.title {
+				padding: 10px 25px;
+				font-size: 20px;
+			}
 		}
 	}
 }

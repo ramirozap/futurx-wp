@@ -31,13 +31,12 @@
 			font-family: var(--font-family-primary, Helvetica);
 			font-size: 18px;
 			font-style: normal;
-			font-weight: 400;
+			font-weight: 700;
 			line-height: normal;
 		}
 		.texto {
 			color: #d9d9d9;
 			padding-top: 50px;
-			/* Web/Primar */
 			font-family: Helvetica;
 			font-size: 20px;
 			font-style: normal;
@@ -49,5 +48,22 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+}
+
+@media (max-width: 830px) {
+	.wp-block-futurx-companias {
+		.container {
+			grid-template-columns: 1fr;
+			padding: 30px;
+		}
+		.compania {
+			.texto {
+				padding-top: 30px;
+			}
+		}
+		.flechas {
+			display: none;
+		}
 	}
 }

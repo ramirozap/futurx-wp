@@ -23,6 +23,7 @@
   flex-direction: column;
 }
 .wp-block-futurx-footer a {
+  color: #c6c6c6;
   font-family: Helvetica;
   font-size: 16px;
   font-style: normal;
@@ -34,4 +35,20 @@
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 36px;
+}
+
+@media (max-width: 768px) {
+  .wp-block-futurx-footer .container {
+    padding: 60px;
+    flex-direction: column;
+  }
+  .wp-block-futurx-footer .book-card {
+    margin-bottom: 30px;
+  }
+  .wp-block-futurx-footer a {
+    margin-bottom: 20px;
+  }
+  .wp-block-futurx-footer a.main-link {
+    margin-bottom: 25px;
+  }
 }

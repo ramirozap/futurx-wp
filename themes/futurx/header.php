@@ -23,7 +23,7 @@
                 <div class="title">
                     IA + MÚSICA
                 </div>
-                <div class="col col--lg-8 col--lg-offset-1 col--md-8 col--md-offset-1 col--sm-6 col--xs-6">
+                <div >
                     <div class="header__navigation">
                         <nav role="navigation">
                             <!--
@@ -31,16 +31,11 @@
     -->
                             <ul class="nav nav--header">
                                 <li class="nav__item">
-                                    <a href="#compra" class="nav__link">COMPRA</a>
+                                    <a href="#compra" class="nav__link">COMPRÁ</a>
                                 </li>
                             </ul>
                         </nav>
-                    </div>
-                    <a href="#" class="nav-burger js-menu-toggle">
-                        <span class="nav-burger__line"></span>
-                        <span class="nav-burger__line"></span>
-                        <span class="nav-burger__line"></span>
-                    </a>                        
+                    </div>                        
                 </div>
             </div>
         </header>

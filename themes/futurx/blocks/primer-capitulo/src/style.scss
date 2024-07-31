@@ -82,3 +82,25 @@
 		}
 	}
 }
+
+@media (max-width: 769px) {
+	.wp-block-futurx-primer-capitulo {
+		.container {
+			padding: 40px;
+			.titulos {
+				display: grid;
+				gap: 20px;
+				grid-template-columns: auto;
+				margin-bottom: 40px;
+			}
+			p {
+				font-size: 16px;
+			}
+			.wp-block-file {
+				display: flex;
+				justify-content: center;
+				margin-top: 40px;
+			}
+		}
+	}
+}

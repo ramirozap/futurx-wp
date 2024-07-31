@@ -16,7 +16,7 @@ import iamusicaenlatam from "../../../assets/images/iamusicaenlatam.png";
  * @return {Element} Element to render.
  */
 export default function Edit({ attributes, setAttributes }) {
-	const { texto } = attributes;
+	const { texto, textoLink, link } = attributes;
 
 	return (
 		<>
@@ -27,12 +27,22 @@ export default function Edit({ attributes, setAttributes }) {
 						value={texto || ""}
 						onChange={(value) => setAttributes({ texto: value })}
 					/>
+					<TextControl
+						label="Texto Link"
+						value={textoLink || ""}
+						onChange={(value) => setAttributes({ textoLink: value })}
+					/>
+					<TextControl
+						label="Link"
+						value={link || ""}
+						onChange={(value) => setAttributes({ link: value })}
+					/>
 				</PanelBody>
 			</InspectorControls>
 			<div {...useBlockProps()}>
 				<div>
 					<img src={iamusicaenlatam} alt="ia mas música en latam" />
-					<InnerBlocks allowedBlocks={["core/file"]} />
+					<a>{textoLink}</a>
 				</div>
 				<div className="texto">{texto}</div>
 			</div>

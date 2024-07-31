@@ -31,3 +31,13 @@
 		}
 	}
 }
+
+@media (max-width: 960px) {
+	.wp-block-futurx-publicacion {
+		.container {
+			grid-template-columns: 1fr;
+			padding: 40px;
+			font-size: 16px;
+		}
+	}
+}
