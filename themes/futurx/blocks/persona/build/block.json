@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "futurx/persona",
+  "version": "0.1.0",
+  "title": "Persona",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Persona para usar en slider secundario",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "persona",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "texto": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "rol1": {
+      "type": "string"
+    },
+    "rol2": {
+      "type": "string"
+    }
+  }
+}

@@ -336,6 +336,10 @@ function register_blocks() {
     register_block_type( __DIR__ . '/blocks/footer/build' );
     register_block_type( __DIR__ . '/blocks/logos/build' );
     register_block_type( __DIR__ . '/blocks/puntos/build' );
+    register_block_type( __DIR__ . '/blocks/persona/build' );
 }
 
 add_action( 'init', 'register_blocks' );
+
+// Disable WordPress' automatic image scaling feature
+add_filter( 'big_image_size_threshold', '__return_false' );

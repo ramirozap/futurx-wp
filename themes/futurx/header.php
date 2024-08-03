@@ -17,12 +17,12 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
         <![endif]-->
     </head>
-    <body <?php body_class(); ?>>
+    <body <?php body_class(); ?> id="body">
         <header class="header" role="banner">
             <div class="container">
-                <div class="title">
+                <a href="#body" class="title">
                     IA + MÚSICA
-                </div>
+                </a>
                 <div >
                     <div class="header__navigation">
                         <nav role="navigation">
@@ -31,7 +31,7 @@
     -->
                             <ul class="nav nav--header">
                                 <li class="nav__item">
-                                    <a href="#compra" class="nav__link">COMPRÁ</a>
+                                    <a href="#compra" class="nav__link">COMPRA</a>
                                 </li>
                             </ul>
                         </nav>

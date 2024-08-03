@@ -47,7 +47,7 @@
 			align-self: center;
 		}
 		p {
-			color: #fff;
+			color: #c6c6c6;
 			font-family: Helvetica;
 			font-size: 32px;
 			font-style: normal;
@@ -93,6 +93,12 @@
 				grid-template-columns: auto;
 				margin-bottom: 40px;
 			}
+			h2 {
+				font-size: 48px;
+			}
+			h3 {
+				font-size: 16px;
+			}
 			p {
 				font-size: 16px;
 			}
@@ -100,6 +106,10 @@
 				display: flex;
 				justify-content: center;
 				margin-top: 40px;
+			}
+			a {
+				width: 100%;
+				font-size: 16px;
 			}
 		}
 	}

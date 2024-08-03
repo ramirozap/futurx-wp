@@ -41,7 +41,7 @@
 			background: var(--Violet-digital, #b284db);
 			position: absolute;
 			width: calc(100% - 20px);
-			padding: 10px 45px;
+			padding: 10px 35px;
 			top: -10px;
 			left: -10px;
 			color: #000;
@@ -64,6 +64,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			text-align: center;
 			&:not(:first-child) {
 				margin-top: 20px;
 			}
@@ -85,7 +86,11 @@
 			margin-bottom: 40px;
 			.title {
 				padding: 10px 25px;
-				font-size: 20px;
+				font-size: 16px;
+			}
+			a {
+				font-size: 16px;
+				padding: 12px 8px;
 			}
 		}
 	}

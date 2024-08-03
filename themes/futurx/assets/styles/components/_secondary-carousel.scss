@@ -1,0 +1,33 @@
+.secondary-carousel {
+  margin: auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: 60px;
+  .slick-prev.slick-arrow {
+    position: absolute;
+    left: 10px;
+  }
+  .slick-prev:before {
+    content: url("../futurx/assets/images/flecha-slider.svg");
+  }
+  .slick-next.slick-arrow {
+    position: absolute;
+    right: 10px;
+    transform: rotate(180deg) translate(0, -110%);
+  }
+  .slick-next:before {
+    content: url("../futurx/assets/images/flecha-slider.svg");
+  }
+}
+
+@media (max-width: 768px) {
+  .secondary-carousel {
+    padding: 40px;
+    .slick-prev.slick-arrow {
+      display: none !important;
+    }
+    .slick-next.slick-arrow {
+      display: none !important;
+    }
+  }
+}

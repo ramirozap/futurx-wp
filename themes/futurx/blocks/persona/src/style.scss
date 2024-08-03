@@ -1,0 +1,73 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-futurx-persona {
+	padding: 0 10px;
+	.container {
+		width: 100%;
+		background-color: #c6c6c6;
+		color: #000;
+		.foto {
+			width: 100%;
+			aspect-ratio: 2/1;
+		}
+		.info {
+			padding: 24px;
+			display: flex;
+			gap: 24px;
+			text-align: center;
+			flex-direction: column;
+			.nombre {
+				text-transform: uppercase;
+				font-size: 24px;
+				font-weight: bold;
+			}
+			.roles {
+				display: flex;
+				justify-content: center;
+				gap: 8px;
+				.rol {
+					display: inline-block;
+					padding: 2px 4px;
+					background-color: #222;
+					color: var(--Violet, #b49bca);
+					font-family: Helvetica;
+					font-size: 16px;
+					font-style: normal;
+					font-weight: 400;
+					line-height: normal;
+				}
+			}
+			.texto {
+				text-align: left;
+				color: #000;
+
+				font-family: Helvetica;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				padding: 0 16px;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.wp-block-futurx-persona {
+		.container {
+			.info {
+				.nombre {
+					font-size: 18px;
+				}
+				.texto {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

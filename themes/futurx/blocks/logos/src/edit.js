@@ -21,9 +21,9 @@ export default function Edit({ attributes, setAttributes }) {
 					/>
 				</PanelBody>
 			</InspectorControls>
-			<div {...useBlockProps()} className="book-cards">
-				<div className="title">{texto}</div>
-				<InnerBlocks allowedBlocks={["core/image"]} />
+			<div {...useBlockProps()} className="container">
+				<p>{texto}</p>
+				<InnerBlocks allowedBlocks={["core/image"]} className="logos" />
 			</div>
 		</>
 	);

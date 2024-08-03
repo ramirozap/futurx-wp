@@ -24,7 +24,7 @@
 	.texto {
 		border: 1px solid #847f7f;
 		padding: 25px;
-		color: #fff;
+		color: #c6c6c6;
 
 		/* Web/Primar */
 		font-family: Helvetica;
@@ -64,6 +64,12 @@
 		.container {
 			grid-template-columns: 1fr;
 			padding: 60px 30px;
+		}
+		.texto {
+			font-size: 16px;
+		}
+		a {
+			font-size: 16px;
 		}
 	}
 }

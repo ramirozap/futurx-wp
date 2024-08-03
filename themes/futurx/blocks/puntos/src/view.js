@@ -21,5 +21,4 @@
  */
 
 /* eslint-disable no-console */
-console.log( 'Hello World! (from futurx-puntos block)' );
 /* eslint-enable no-console */

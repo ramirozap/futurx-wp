@@ -6,7 +6,7 @@
  */
 
 .wp-block-futurx-puntos {
-	background: linear-gradient(180deg, #b49bca 0%, #222 100%);
+	background: linear-gradient(180deg, #b49bca 100%, #222 100%);
 	color: #fff;
 	.container {
 		max-width: 1440px;
@@ -93,8 +93,8 @@
 						width: 120px;
 					}
 					.titulo {
-						align-self: center;
-						margin-top: unset;
+						margin-top: 10px;
+						font-size: 16px;
 					}
 					.flecha {
 						display: none;
@@ -102,8 +102,9 @@
 				}
 				.derecha {
 					margin-left: 120px;
-					padding-top: 12px;
 					font-size: 16px;
+					margin-top: -50px;
+					padding: 0;
 				}
 			}
 		}

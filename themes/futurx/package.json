@@ -5,7 +5,8 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cd ./blocks/boton-compra && npm install && cd.. && cd ./companias && npm install && cd.. && cd ./compra && npm install && cd.. && cd ./footer && npm install && cd.. &&cd ./primer-capitulo && npm install && cd.. &&cd ./publicacion && npm install && cd.. &&cd ./puntos && npm install && cd.. &&cd ./reporte && npm install && cd.. && cd ./tiendas && npm install && cd.. && cd ./logos && npm install"
+    "postinstall": "cd ./blocks/boton-compra && npm install && cd ../companias && npm install && cd ../compra && npm install && cd ../footer && npm install && cd.. &&cd ./primer-capitulo && npm install && cd.. &&cd ./publicacion && npm install && cd.. &&cd ./puntos && npm install && cd.. &&cd ./reporte && npm install && cd ../tiendas && npm install && cd ../logos && npm install && cd ../persona && npm install",
+    "build": "cd ./blocks/boton-compra && npm run build && cd ../companias && npm run build && cd ../compra && npm run build && cd ../footer && npm run build && cd.. &&cd ./primer-capitulo && npm run build && cd.. &&cd ./publicacion && npm run build && cd.. &&cd ./puntos && npm run build && cd.. &&cd ./reporte && npm run build && cd ../tiendas && npm run build && cd ../logos && npm run build && cd ../persona && npm run build"
   },
   "repository": {
     "type": "git",
