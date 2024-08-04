@@ -18,7 +18,12 @@ import { useBlockProps } from "@wordpress/block-editor";
 export default function save({ attributes }) {
 	const { texto, link } = attributes;
 	return (
-		<a {...useBlockProps.save()} href={link} className="boton-compra">
+		<a
+			{...useBlockProps.save()}
+			href={link}
+			target="_blank"
+			className="boton-compra"
+		>
 			{texto}
 		</a>
 	);

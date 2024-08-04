@@ -1,4 +1,4 @@
-.wp-block-cb-carousel.cb-single-slide.slick-initialized.slick-slider {
+.main-carousel {
   max-width: 1440px;
   height: calc(100vh - 70px);
   overflow: hidden;
@@ -7,6 +7,7 @@
   .slick-list {
     height: 100%;
   }
+
   figure {
     height: 100%;
   }
@@ -36,12 +37,11 @@
 }
 
 .wp-block-cb-carousel .slick-slide {
-  overflow: hidden;
   padding: 0;
 }
 
 @media (max-width: 768px) {
-  .wp-block-cb-carousel.cb-single-slide.slick-initialized.slick-slider {
+  .main-carousel {
     height: calc(60vh - 70px);
   }
 }
