@@ -18,6 +18,19 @@
   .slick-next:before {
     content: url("../futurx/assets/images/flecha-slider.svg");
   }
+  &.slick-slider .slick-track {
+    display: flex;
+    align-items: stretch;
+    > div {
+      height: unset;
+      > section {
+        height: 100%;
+        .container {
+          height: 100%;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
