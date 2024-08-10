@@ -1,4 +1,5 @@
-.page-template-biblio-ES-page {
+.page-template-biblio-ES-page,
+.page-template-biblio-EN-page {
   background-color: black;
   main {
     color: #c6c6c6;
@@ -118,7 +119,8 @@
 }
 
 @media (min-width: 1440px) {
-  .page-template-biblio-ES-page {
+  .page-template-biblio-ES-page,
+  .page-template-biblio-EN-page {
     main {
       .footer-image::after {
         box-shadow: inset 70px 0px 70px 0 #000000,
