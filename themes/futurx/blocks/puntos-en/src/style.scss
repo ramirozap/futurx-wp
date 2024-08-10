@@ -1,0 +1,112 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-futurx-puntos-en {
+	background: linear-gradient(180deg, #b49bca 100%, #222 100%);
+	color: #fff;
+	.container {
+		max-width: 1440px;
+		padding: 60px;
+		display: flex;
+		gap: 60px;
+		flex-direction: column;
+		margin: auto;
+		.capitulo {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 60px;
+			.izquierda {
+				position: relative;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				.titulo {
+					padding: 10px 24px;
+					height: fit-content;
+					width: 210px;
+					background-color: #000;
+					color: #fff;
+					font-family: Helvetica;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+					margin-top: 21px;
+					z-index: 1;
+					&.ultimo {
+						margin-top: 10px;
+					}
+				}
+				.flecha {
+					position: absolute;
+					top: 15px;
+					width: 95%;
+					right: 0;
+				}
+			}
+			.derecha {
+				padding-top: 12px;
+				color: #000;
+
+				/* Web/Primar */
+				font-family: Helvetica;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				.separador {
+					color: rgba(236, 236, 236, 0.52);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.wp-block-futurx-puntos-en {
+		.container {
+			.capitulo {
+				.izquierda {
+					.flecha {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.wp-block-futurx-puntos-en {
+		.container {
+			padding: 40px;
+			.capitulo {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+				.izquierda {
+					display: flex;
+					.capitulo-numero {
+						width: 120px;
+					}
+					.titulo {
+						margin-top: 10px;
+						font-size: 16px;
+					}
+					.flecha {
+						display: none;
+					}
+				}
+				.derecha {
+					margin-left: 120px;
+					font-size: 16px;
+					margin-top: -50px;
+					padding: 0;
+				}
+			}
+		}
+	}
+}

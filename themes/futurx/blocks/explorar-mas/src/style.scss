@@ -1,0 +1,81 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-futurx-explorar-mas {
+	background: var(--Gris, #c6c6c6);
+	.container {
+		color: #000;
+		padding: 60px;
+		display: grid;
+		gap: 60px;
+		grid-template-columns: 300px 1fr auto;
+		font-family: Helvetica;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		max-width: 1440px;
+		margin: auto;
+		align-items: center;
+		align-content: space-around;
+		justify-content: center;
+		.texto {
+			width: fit-content;
+			display: block;
+			padding: 10px 24px;
+			background-color: #fff;
+			color: #000;
+
+			text-align: center;
+			/* Button/web */
+			font-family: Helvetica;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			box-shadow: 3px 4px 10.4px 0px rgba(255, 255, 255, 0.2);
+		}
+		.libro {
+			z-index: 10;
+		}
+		.flecha {
+			justify-self: center;
+			position: relative;
+			width: 100%;
+			img {
+				max-width: unset;
+				position: absolute;
+				top: -26px;
+				right: 0;
+				@media (max-width: 960px) {
+					display: none;
+				}
+			}
+		}
+	}
+	.wp-block-image {
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: 15%;
+		}
+	}
+}
+
+@media (max-width: 960px) {
+	.wp-block-futurx-explorar-mas {
+		.container {
+			grid-template-columns: 1fr;
+			padding: 40px;
+			font-size: 16px;
+			justify-items: center;
+			gap: 15px;
+		}
+	}
+}

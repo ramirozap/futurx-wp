@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php
+
+    /**
+     * Template Name: Home ingles
+     */
+?>
+<?php get_header('en'); ?>
 
 <main class="main" role="main">
     <div class="container">

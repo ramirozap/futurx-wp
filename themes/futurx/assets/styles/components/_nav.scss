@@ -59,11 +59,11 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      &.newsletter {
+      &.lang {
         background: transparent;
         color: #fff;
-        text-decoration: underline;
         padding: 10px 5px;
+        font-weight: normal;
       }
     }
   }

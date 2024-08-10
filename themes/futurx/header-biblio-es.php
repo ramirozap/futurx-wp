@@ -20,24 +20,11 @@
     <body <?php body_class(); ?> id="body">
         <header class="header" role="banner">
             <div class="container">
-                <a href="#body" class="title">
+                <a href="<?php echo get_home_url(); ?>" class="title">
                     IA + MÚSICA
                 </a>
                 <div >
                     <div class="header__navigation">
-                        <nav role="navigation">
-                            <!--
-                            <?php wp_nav_menu(['theme_location' => 'header', 'menu_class' => 'nav nav--header']); ?>
-    -->
-                            <ul class="nav nav--header">
-                                <li class="nav__item">
-                                    <a href="#compra" class="nav__link">COMPRA</a>
-                                </li>
-                                <li class="nav__item">
-                                    <a href="/en" class="nav__link lang">EN</a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>                        
                 </div>
             </div>

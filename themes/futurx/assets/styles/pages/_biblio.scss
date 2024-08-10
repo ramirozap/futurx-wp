@@ -1,0 +1,136 @@
+.page-template-biblio-ES-page {
+  background-color: black;
+  main {
+    color: #c6c6c6;
+    font-family: Helvetica;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+    a {
+      color: #c6c6c6;
+      font-family: Helvetica;
+      font-size: 20px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+    h2 {
+      color: var(--boton-blanco, #fff);
+      /* Web/Primar black */
+      font-family: Helvetica;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 12px;
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+    header {
+      text-align: center;
+      margin-bottom: 80px;
+      @media (max-width: 768px) {
+        text-align: left;
+      }
+      .post__title {
+        background: var(--Gris, #c6c6c6);
+        margin-bottom: 20px;
+        color: var(--Negro, #1d1d1b);
+        /* Web/Primar black */
+        font-family: Helvetica;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        display: inline-block;
+        margin: auto;
+        padding: 10px 50px;
+        position: relative;
+        @media (max-width: 768px) {
+          color: var(--Violet-digital, #b284db);
+          background-color: transparent;
+          font-size: 16px;
+          padding: 0;
+        }
+        &::before {
+          content: "";
+          border: 1px solid var(--Gris, #c6c6c6);
+          position: absolute;
+          top: 10px;
+          right: -10px;
+          left: 10px;
+          bottom: -10px;
+          @media (max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .wp-container-core-columns-is-layout-1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: unset;
+      gap: 10%;
+      .wp-block-column {
+        width: 45%;
+        ul {
+          margin-bottom: 30px;
+        }
+        li {
+          margin-bottom: 20px;
+          @media (max-width: 768px) {
+            margin-bottom: 10px;
+          }
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .container {
+      width: 100%;
+      max-width: 1440px;
+      margin: auto;
+      padding: 60px;
+      @media (max-width: 768px) {
+        padding: 20px;
+      }
+    }
+    .footer-image {
+      max-width: 1440px;
+      width: 100%;
+      aspect-ratio: 1440 / 580;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .page-template-biblio-ES-page {
+    main {
+      .footer-image::after {
+        box-shadow: inset 70px 0px 70px 0 #000000,
+          inset -70px 0px 70px 0 #000000;
+        content: "";
+        display: block;
+        padding-bottom: 40%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}

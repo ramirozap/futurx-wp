@@ -336,7 +336,9 @@ function register_blocks() {
     register_block_type( __DIR__ . '/blocks/footer/build' );
     register_block_type( __DIR__ . '/blocks/logos/build' );
     register_block_type( __DIR__ . '/blocks/puntos/build' );
+    register_block_type( __DIR__ . '/blocks/puntos-en/build' );
     register_block_type( __DIR__ . '/blocks/persona/build' );
+    register_block_type( __DIR__ . '/blocks/explorar-mas/build' );
 }
 
 add_action( 'init', 'register_blocks' );

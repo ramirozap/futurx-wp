@@ -21,7 +21,7 @@
         <header class="header" role="banner">
             <div class="container">
                 <a href="#body" class="title">
-                    IA + MÚSICA
+                    IA + MUSIC
                 </a>
                 <div >
                     <div class="header__navigation">
@@ -31,10 +31,10 @@
     -->
                             <ul class="nav nav--header">
                                 <li class="nav__item">
-                                    <a href="#compra" class="nav__link">COMPRA</a>
+                                    <a href="#compra" class="nav__link">BUY</a>
                                 </li>
                                 <li class="nav__item">
-                                    <a href="/en" class="nav__link lang">EN</a>
+                                    <a href="<?php echo get_home_url(); ?>" class="nav__link lang">ES</a>
                                 </li>
                             </ul>
                         </nav>
