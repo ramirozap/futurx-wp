@@ -21,7 +21,7 @@
         <header class="header" role="banner">
             <div class="container">
                 <a href="#body" class="title">
-                    IA + MUSIC
+                    AI + MUSIC
                 </a>
                 <div >
                     <div class="header__navigation">
