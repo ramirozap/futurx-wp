@@ -32,6 +32,14 @@
 		"descripcion2": {
 			"type": "string",
 			"default": "larrosa"
+		},
+		"link1": {
+			"type": "string",
+			"default": "https://futurx.net/"
+		},
+		"link2": {
+			"type": "string",
+			"default": "https://www.larrosa.pro/"
 		}
 	}
 }
