@@ -55,6 +55,7 @@ export default function save() {
 						<span className="separador">|</span> Towards a Clear Legal Framework
 					</div>
 				</div>
+				<h2 className="titulo">The FUTURX is collaborative</h2>
 			</div>
 		</section>
 	);

@@ -16,27 +16,22 @@ import flechas from "../../../assets/images/flechas.png";
  *
  * @return {Element} Element to render.
  */
-export default function save() {
+export default function save({ attributes }) {
+	const { nombre1, nombre2, descripcion1, descripcion2 } = attributes;
+
 	return (
 		<section {...useBlockProps.save()}>
 			<div className="container">
 				<div className="compania">
-					<div className="nombre">FUTURX</div>
-					<div className="texto">
-						Es un centro de investigación y desarrollo (I+D) con foco en la
-						intersección entre la música, la tecnología y la cultura de
-						internet.
-					</div>
+					<div className="nombre">{nombre1}</div>
+					<div className="texto">{descripcion1}</div>
 				</div>
 				<div className="flechas">
 					<img src={flechas} />
 				</div>
 				<div className="compania">
-					<div className="nombre">LARROSA</div>
-					<div className="texto">
-						Es una compañía especializada en tecnología avanzada, financiación y
-						soluciones discográficas para la industria musical.
-					</div>
+					<div className="nombre">{nombre2}</div>
+					<div className="texto">{descripcion2}</div>
 				</div>
 			</div>
 		</section>

@@ -50,10 +50,7 @@
         padding: 10px 50px;
         position: relative;
         @media (max-width: 768px) {
-          color: var(--Violet-digital, #b284db);
-          background-color: transparent;
           font-size: 16px;
-          padding: 0;
         }
         &::before {
           content: "";
@@ -63,9 +60,6 @@
           right: -10px;
           left: 10px;
           bottom: -10px;
-          @media (max-width: 768px) {
-            display: none;
-          }
         }
       }
     }

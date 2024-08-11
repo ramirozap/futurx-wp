@@ -3,8 +3,10 @@ import "./editor.scss";
 
 export default function Edit() {
 	return (
-		<div {...useBlockProps()}>
-			<InnerBlocks allowedBlocks={["futurx/tiendas"]} />
-		</div>
+		<footer {...useBlockProps()}>
+			<div className="container">
+				<InnerBlocks allowedBlocks={["futurx/tiendas"]} />
+			</div>
+		</footer>
 	);
 }

@@ -4,13 +4,6 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
  */
 import { __ } from "@wordpress/i18n";
-
-/**
- * React hook that is used to mark the block wrapper element.
- * It provides all the necessary props like the class name.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
- */
 import {
 	useBlockProps,
 	InspectorControls,
@@ -57,16 +50,22 @@ export default function Edit({ attributes, setAttributes }) {
 				</PanelBody>
 			</InspectorControls>
 			<div {...blockProps}>
-				{titulo && <h2>{titulo}</h2>}
-				<RichText
-					{...blockProps}
-					tagName="h3" // The tag here is the element output and editable in the admin
-					value={subtitulo} // Any existing content, either from the database or an attribute default
-					onChange={(content) => setAttributes({ subtitulo: content })} // Store updated content as a block attribute
-					placeholder={__("Subtitulo...")} // Display this text before any content has been added by the user
-				/>
-				{texto && <p>{texto}</p>}
-				<InnerBlocks allowedBlocks={["core/file"]} />
+				<div className="container">
+					<div className="textos">
+						<div className="titulos">
+							{titulo && <h2>{titulo}</h2>}
+							<RichText
+								{...blockProps}
+								tagName="h3" // The tag here is the element output and editable in the admin
+								value={subtitulo} // Any existing content, either from the database or an attribute default
+								onChange={(content) => setAttributes({ subtitulo: content })} // Store updated content as a block attribute
+								placeholder={__("Subtitulo...")} // Display this text before any content has been added by the user
+							/>
+						</div>
+						{texto && <p>{texto}</p>}
+						<InnerBlocks allowedBlocks={["core/file"]} />
+					</div>
+				</div>
 			</div>
 		</>
 	);

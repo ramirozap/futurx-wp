@@ -25,7 +25,12 @@ export default function save({ attributes }) {
 	return (
 		<div {...useBlockProps.save()} className={classes}>
 			{link ? (
-				<a href={link} target="_blank" className="main-link">
+				<a
+					href={link}
+					target="_blank"
+					className="main-link"
+					rel="noreferrer noopener"
+				>
 					{texto}
 				</a>
 			) : (

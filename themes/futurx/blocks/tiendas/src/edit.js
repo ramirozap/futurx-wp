@@ -11,6 +11,11 @@ import "./editor.scss";
 export default function Edit({ attributes, setAttributes }) {
 	const { texto, alternativeStyle, link } = attributes;
 
+	let classes = "book-card";
+	if (alternativeStyle) {
+		classes = classes.concat(" alternative");
+	}
+
 	return (
 		<>
 			<InspectorControls>
@@ -35,7 +40,7 @@ export default function Edit({ attributes, setAttributes }) {
 					/>
 				</PanelBody>
 			</InspectorControls>
-			<div {...useBlockProps()} className="book-cards">
+			<div {...useBlockProps()} className={classes}>
 				<div className="title">{texto}</div>
 				<InnerBlocks allowedBlocks={["futurx/boton-compra"]} />
 			</div>

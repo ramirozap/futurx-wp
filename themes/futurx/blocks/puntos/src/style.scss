@@ -15,6 +15,7 @@
 		gap: 60px;
 		flex-direction: column;
 		margin: auto;
+		padding-bottom: 0;
 		.capitulo {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -62,6 +63,17 @@
 				}
 			}
 		}
+		h2 {
+			margin: auto;
+			color: #fff;
+			font-family: Helvetica;
+			font-size: 32px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: normal;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
 	}
 }
 
@@ -83,6 +95,7 @@
 	.wp-block-futurx-puntos {
 		.container {
 			padding: 40px;
+			padding-bottom: 0;
 			.capitulo {
 				display: flex;
 				flex-direction: column;
@@ -106,6 +119,17 @@
 					margin-top: -50px;
 					padding: 0;
 				}
+			}
+			h2 {
+				margin: auto;
+				color: #fff;
+				font-family: Helvetica;
+				font-size: 20px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+				margin-bottom: 20px;
+				margin-top: 20px;
 			}
 		}
 	}

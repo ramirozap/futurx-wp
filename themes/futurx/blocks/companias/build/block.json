@@ -15,5 +15,23 @@
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",
-  "viewScript": "file:./view.js"
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "nombre1": {
+      "type": "string",
+      "default": "futurx"
+    },
+    "nombre2": {
+      "type": "string",
+      "default": "larrosa"
+    },
+    "descripcion1": {
+      "type": "string",
+      "default": "futurx"
+    },
+    "descripcion2": {
+      "type": "string",
+      "default": "larrosa"
+    }
+  }
 }

@@ -15,7 +15,7 @@ export default function save({ attributes }) {
 			<div className="container">
 				<div className="izquierda">
 					<img src={iamusicaenlatam} alt="ia mas música en latam" />
-					<a href={link} target="_blank" rel="noreferrer">
+					<a href={link} target="_blank" rel="noreferrer noopener">
 						{textoLink}
 					</a>
 				</div>

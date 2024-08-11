@@ -23,6 +23,7 @@ export default function save({ attributes }) {
 			href={link}
 			target="_blank"
 			className="boton-compra"
+			rel="noreferrer noopener"
 		>
 			{texto}
 		</a>
